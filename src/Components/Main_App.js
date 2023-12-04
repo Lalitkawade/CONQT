@@ -9,6 +9,8 @@ import ShoppingCard from './Categories/Shopping Card/ShoppingCard';
 // import Content from './Slidebar/Content/Content';
 import "./Slidebar/Content/Content.css"
 import EndingOffer from './Categories/Offer Ending Soon/EndingOffer';
+import SliderComponent from './Slider Component/SliderComponent';
+import YourComponent from './Your Component/YourComponent';
 
 
 const MainApp = () => {
@@ -30,17 +32,20 @@ const MainApp = () => {
     return (
         <div className='Main-App'>
             <Header />
-           <ShoppingCard/>
-           {/* <div className='left-sidebar'>
-           <Content/>
-           </div> */}  
+            <ShoppingCard />
+
+            {/* <Content /> */}
+
             <FlashSale items={items.data} />
             <NewArrival items={items.data} />
-            <SpecialOffers items={items.data}/>
-            <DealOfTheDay items={items.data}/>
-            <EndingOffer items={items.data}/>
-            <Footer/>
-            <h1>{items.message}</h1>
+            <SpecialOffers items={items.data} />
+            <DealOfTheDay items={items.data} />
+            <EndingOffer items={items.data} />
+            <SliderComponent items={items.data}/>
+            <YourComponent/>
+            <Footer />
+
+
         </div>
     );
 };

@@ -1,0 +1,50 @@
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1310px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 30px;
+    border: 2px;
+    border-color: rgb(41, 201, 201);
+    background-color: rgb(91, 119, 232);
+   
+}
+
+.button {
+    height: 50px;
+    width: 50px;
+}
+
+.slides-container {
+    display: flex;
+    overflow: hidden;
+    width: calc(100% - 140px);
+}
+
+.slide {
+    flex: 0 0 calc(100% / 3);
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    text-align: center;
+    font-size: 24px;
+    overflow: hidden;
+    /* Hide image overflow */
+}
+
+.slide img {
+    max-width: 100%;
+    /* Ensure image doesn't exceed card width */
+    max-height: 100%;
+    /* Ensure image doesn't exceed card height */
+    object-fit: contain;
+    /* Maintain aspect ratio */
+}
+
+.active {
+    transform: translateX(0);
+}
