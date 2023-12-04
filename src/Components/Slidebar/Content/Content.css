@@ -1,0 +1,27 @@
+.sidebar {
+    background-color: #f0f0f0;
+    width: 200px;
+    height: 100;
+  }
+  
+  .sidebar-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .sidebar-item {
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .sidebar-item-more {
+    margin-top: auto;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+
+ .right-sidebar{
+  padding-bottom: 200px;
+ }

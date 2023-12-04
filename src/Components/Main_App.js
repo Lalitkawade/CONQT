@@ -5,6 +5,10 @@ import NewArrival from './Categories/New Arrival/NewArrival';
 import SpecialOffers from './Categories/Special Offers/SpecialOffers';
 import Footer from './Footer/Footer';
 import DealOfTheDay from './Categories/Deal of the Day/DealOfTheDay';
+import ShoppingCard from './Categories/Shopping Card/ShoppingCard';
+// import Content from './Slidebar/Content/Content';
+import "./Slidebar/Content/Content.css"
+import EndingOffer from './Categories/Offer Ending Soon/EndingOffer';
 
 
 const MainApp = () => {
@@ -24,14 +28,18 @@ const MainApp = () => {
     console.log(items)
 
     return (
-        <div>
+        <div className='Main-App'>
             <Header />
+           <ShoppingCard/>
+           {/* <div className='left-sidebar'>
+           <Content/>
+           </div> */}  
             <FlashSale items={items.data} />
             <NewArrival items={items.data} />
             <SpecialOffers items={items.data}/>
             <DealOfTheDay items={items.data}/>
+            <EndingOffer items={items.data}/>
             <Footer/>
-
             <h1>{items.message}</h1>
         </div>
     );

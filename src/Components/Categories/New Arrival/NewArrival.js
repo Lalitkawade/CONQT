@@ -1,6 +1,5 @@
 import React from "react";
 import Rating from '@mui/material/Rating';
-import Button from '@mui/material/Button';
 import "./NewArrival.css"
 
 const NewArrival = ({ items }) => {
@@ -23,9 +22,7 @@ const NewArrival = ({ items }) => {
                         <div className="new-arrival-course-details">
                             <h2>{Course.product_name}</h2>
                             <Rating size="small" name={`rating-${Course.id}`} defaultValue={Course.avg_rating} precision={0.1} readOnly />
-                            <Button size="small" variant="contained" color="success">
-                            Success
-                        </Button>
+                            <button className="button">Get Pricing</button>
                         </div>
                         
                     </div>

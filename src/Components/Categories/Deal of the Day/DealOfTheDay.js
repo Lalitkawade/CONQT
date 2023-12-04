@@ -1,8 +1,6 @@
 import React from 'react';
 import Rating from '@mui/material/Rating';
-import Button from '@mui/material/Button';
-import './DealOfTheDay.css'; // Import the CSS file
-
+import './DealOfTheDay.css';
 const DealOfTheDay = ({ items }) => {
   
   if (!Array.isArray(items)) {
@@ -23,9 +21,7 @@ const DealOfTheDay = ({ items }) => {
               <Rating size="small" name={`rating-${Course.id}`} defaultValue={Course.avg_rating} precision={0.1} readOnly />
               <span>{Course.avg_rating}</span>
             </div>
-            <Button size="small" variant="contained" color="success">
-                            Success
-                        </Button>
+            <button className='button'>Get Pricing</button>
           </div>
         )}
       </div>

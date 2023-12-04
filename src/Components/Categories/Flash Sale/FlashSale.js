@@ -19,8 +19,13 @@ const FlashSale = ({ items }) => {
             <div><img src={Course.image_url} alt='pic'/></div>
             <h1>{Course.product_name}</h1>
             <div className="course-details">
-              <Rating name={`rating-${Course.id}`} defaultValue={Course.avg_rating} precision={0.1} readOnly />
-              <span>{Course.avg_rating}</span>
+              <Rating size='small' name={`rating-${Course.id}`} defaultValue={Course.avg_rating} precision={0.1} readOnly />
+              {Course.avg_rating}
+            </div>
+            <div className='card-button'>
+            <button>Features</button>
+            <button>Plan</button>
+            <button>Write Review</button>
             </div>
           </div>
         )}

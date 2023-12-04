@@ -19,22 +19,18 @@
     justify-content: space-around;
     margin-left: 300px;
     gap: 20px;
-    /* Adjust the space between cards */
-
 }
 
 .new-arrival-card {
     width: calc(50% - 20px);
-    /* Adjust the width of the card to fit two cards */
     height: 200px;
-    /* Adjust the height of the card */
     display: flex;
     flex-direction: row;
     align-items: center;
     border: 1px solid #ccc;
-    /* Optional: Add border for visualization */
+
     padding: 10px;
-    /* Optional: Add padding for spacing */
+
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     background-color: #eeeaea;
@@ -42,17 +38,25 @@
 
 .new-arrival-card img {
     width: 200px;
-    /* Adjust the width of the image */
     height: 200px;
-    /* Adjust the height of the image */
     object-fit: cover;
-    /* Ensure the image maintains aspect ratio */
     margin-right: 10px;
-    /* Optional: Add margin between image and content */
+
 }
 
 .new-arrival-course-details {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.button{
+    background-color: rgb(9, 127, 48);
+    color: rgb(7, 7, 7);
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    width: 110px;
+    color: white;
+    cursor: pointer;
 }
