@@ -1,0 +1,59 @@
+.new-offer-headline {
+    margin-left: 325px;
+    position: relative;
+}
+
+.new-offer-headline::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, green 15%, rgb(216, 216, 216) 20%);
+}
+
+.new-offer-list-container {
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-around;
+    margin-left: 300px;
+    gap: 20px;
+    /* Adjust the space between cards */
+
+}
+
+.new-offer-card {
+    width: calc(44% - 20px);
+    font-size: smaller;
+    /* Adjust the width of the card to fit two cards */
+    height: 150px;
+    /* Adjust the height of the card */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ccc;
+    /* Optional: Add border for visualization */
+    padding: 10px;
+    /* Optional: Add padding for spacing */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #eeeaea;
+}
+
+.new-offer-card img {
+    width: 150px;
+    /* Adjust the width of the image */
+    height: 150px;
+    /* Adjust the height of the image */
+    object-fit: cover;
+    /* Ensure the image maintains aspect ratio */
+    margin-right: 15px;
+    /* Optional: Add margin between image and content */
+}
+
+.new-offer-course-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

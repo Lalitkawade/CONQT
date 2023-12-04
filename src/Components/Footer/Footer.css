@@ -1,0 +1,24 @@
+/* Footer.css */
+
+.footer-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.footer-section-item {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.section-heading {
+    border-bottom: 1.3px solid #0a0a0a;
+    width: 180px; /* Adjust the width to your preference */
+    display: block; /* Ensures the width will take effect */
+    padding-bottom: 5px;
+    color: rgb(91, 119, 232);
+    font-size: large;
+}
+

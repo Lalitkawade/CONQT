@@ -1,0 +1,52 @@
+.headline-1 {
+    margin-left: 325px;
+    position: relative;
+  }
+  
+  .headline-1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, green 15%, rgb(216, 216, 216) 20%);
+  }
+  
+  .course-list-container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 300px;
+  }
+  
+  .card-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px; /* Reduced width */
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .card-1 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .card-1 h1 {
+    margin: 0;
+    font-size: 18px; /* Adjusted font size */
+    text-align: start;
+    margin-bottom: 10px;
+  }
+  
+  .course-details-1 {
+    display: flex;
+    justify-content: center;
+  }
+  

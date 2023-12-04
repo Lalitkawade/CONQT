@@ -1,0 +1,132 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(91, 119, 232);
+  }
+  
+  .top-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .conqt-name {
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: xx-large;
+    color: white;
+  }
+  
+  .search-bar {
+    margin-right: 20px;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(234, 62, 62);
+    font-size: large;
+    
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .expert-call-button {
+    margin-right: 20px;
+    background-color: rgb(94, 197, 94);
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    border-color: rgb(94, 197, 94);
+  }
+  
+  .profile-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-menu img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .menu-button {
+
+  }
+
+/* Common styles */
+body {
+    margin: 0;
+  }
+  
+  .header-2 {
+    background-color: rgb(91, 119, 232);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .top-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-buttons {
+    display: flex;
+  }
+  
+  .dropdown-buttons,
+  .flat-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-button,
+  .flat-button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    background-color: rgb(91, 119, 232);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Adjusting dropdown chevron icon */
+  .dropdown-button .fa-chevron-down {
+    margin-left: 5px;
+  }
+  
+  .additional-flat-buttons {
+    margin-left: auto;
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .header-buttons {
+      flex-direction: column;
+    }
+  
+    .dropdown-buttons,
+    .flat-buttons {
+      flex-direction: column;
+    }
+  
+    .dropdown-button,
+    .flat-button {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  
+    .flat-button {
+      padding-left: 2000px
+    }
+  }
+  
