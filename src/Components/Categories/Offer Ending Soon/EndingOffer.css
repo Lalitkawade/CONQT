@@ -1,5 +1,4 @@
 .headline-1 {
-    margin-left: 325px;
     position: relative;
   }
   
@@ -13,6 +12,14 @@
     background-image: linear-gradient(to right, green 15%, rgb(216, 216, 216) 20%);
   }
   
+  .course-list-container-2 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    margin-bottom: -100px; 
+  }
+
+
   .card-2 {
     width: 300px;
     height: 300px;

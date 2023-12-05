@@ -1,5 +1,4 @@
 .headline-1 {
-    margin-left: 325px;
     position: relative;
   }
   
@@ -17,7 +16,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: 300px;
   }
   .button{
     background-color: rgb(9, 127, 48);

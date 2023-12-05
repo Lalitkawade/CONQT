@@ -4,8 +4,7 @@ import "./YourComponent.css"
 const YourComponent = () => {
   return (
     <div>
-      {/* Section 1 */}
-      <div className="section-1">
+       <div className="section-1">
         <div className="image-text-left">
           <img src="1.png" alt="Software" />
           <p>15000+ Softwares</p>
@@ -19,8 +18,6 @@ const YourComponent = () => {
           <p>Free Expert Consultation</p>
         </div>
       </div>
-
-      {/* Section 2 */}
       <div className="section-2">
         <div className="sign-up">
           <p>Sign-up for Newsletter</p>
@@ -28,7 +25,10 @@ const YourComponent = () => {
         <div className="email-input">
           <input type="email" placeholder="Your email address" />
           <button>Subscribe</button>
-          <img style={{height:"50px"}} src='Linkedin-Logo.png' alt='pic' />
+          <div className='logo'>          
+            <img style={{height:"50px"}} src='Logo-linkedIn.png' alt='pic' />
+          </div>
+
         </div>
       </div>
     </div>

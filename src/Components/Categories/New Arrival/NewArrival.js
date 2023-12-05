@@ -13,15 +13,15 @@ const NewArrival = ({ items }) => {
     return (
         <>
             <h2 className='new-arrival-headline'>NEW ARRIVAL</h2>
-            <div className="new-arrival-list-container" style={{ marginLeft: '300px' }}>
+            <div className="new-arrival-list-container">
                 {requiredItems.map((Course) =>
                     <div className='new-arrival-card' key={Course.id}>
                         <div>
                             <img src={Course.image_url} alt='pic' />
                         </div>
                         <div className="new-arrival-course-details">
-                            <h2>{Course.product_name}</h2>
-                            <Rating size="small" name={`rating-${Course.id}`} defaultValue={Course.avg_rating} precision={0.1} readOnly />
+                            <h2>{Course.product_name}<Rating size="small" name={`rating-${Course.id}`} defaultValue={Course.avg_rating} precision={0.1} readOnly /></h2>
+                            
                             <button className="button">Get Pricing</button>
                         </div>
                         

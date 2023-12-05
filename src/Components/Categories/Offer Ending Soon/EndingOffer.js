@@ -14,7 +14,7 @@ const EndingOffer = ({ items }) => {
     <>
 
       <h2 className='headline-1'>Offers Ending Soon</h2>
-      <div className="course-list-container-2" style={{ marginLeft: '300px', display: 'flex', gap: '20px' }}>
+      <div className="course-list-container-2">
         {requiredItems.map((Course) =>
           <div className='card-2' key={Course.id}>
             <div className="image-container-2">
@@ -22,8 +22,8 @@ const EndingOffer = ({ items }) => {
               <div className="discount-text-2">Flat 40% off</div>
             </div>
             <div className="text-details-2">
-              <h1>{Course.product_name}</h1>
-              <Rating size='small' name={`rating-${Course.id}`} defaultValue={Course.avg_rating} precision={0.1} readOnly />
+              <h1>{Course.product_name}<Rating size='small' name={`rating-${Course.id}`} defaultValue={Course.avg_rating} precision={0.1} readOnly /></h1>
+              
               <p className="description-2">{Course.product_description}</p>
             </div>
           </div>

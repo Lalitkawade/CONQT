@@ -13,7 +13,7 @@ const FlashSale = ({ items }) => {
   return (
     <>
       <h2 className='headline'>FLASH SALE{" "}<i class="fa-solid fa-fire" style={{color: '#fbda04'}}></i></h2>
-      <div className="course-list-container" style={{ marginLeft: '300px' }}>
+      <div className="course-list-container">
         {requiredItems.map((Course) =>
           <div className='card' key={Course.id}> 
             <div><img src={Course.image_url} alt='pic'/></div>

@@ -14,7 +14,7 @@ const SliderComponent = ({ items }) => {
 
   return (
     <div className="slider-container">
-      <button className='button' onClick={handlePrev}><i class="fa-regular fa-circle-left"></i></button>
+      <button className='button-slider' onClick={handlePrev}><i class="fa-regular fa-circle-left"></i></button>
       <div className="slides-container">
         {items?.slice(currentIndex, currentIndex + 3).map((slide) => (
           <div
@@ -24,7 +24,7 @@ const SliderComponent = ({ items }) => {
           </div>
         ))}
       </div>
-      <button className='button' onClick={handleNext}><i class="fa-regular fa-circle-right"></i></button>
+      <button className='button-slider' onClick={handleNext}><i class="fa-regular fa-circle-right"></i></button>
     </div>
   );
 };

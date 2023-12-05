@@ -14,7 +14,7 @@ const SpecialOffers = ({ items }) => {
     return (
         <>
             <h2 className='new-offer-headline'>SPECIAL OFFERS FOR YOU</h2>
-            <div className="new-offer-list-container" style={{ marginLeft: '300px' }}>
+            <div className="new-offer-list-container">
                 {requiredItems.map((Course) =>
                     <div className='new-offer-card' key={Course.id}>
                         <div>

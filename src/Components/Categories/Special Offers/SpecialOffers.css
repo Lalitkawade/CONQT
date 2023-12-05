@@ -1,6 +1,5 @@
 .new-offer-headline {
-    margin-left: 325px;
-    position: relative;
+     position: relative;
 }
 
 .new-offer-headline::after {
@@ -17,11 +16,8 @@
     display: flex;
     flex-wrap: row;
     justify-content: space-around;
-    margin-left: 300px;
     gap: 20px;
-    /* Adjust the space between cards */
-
-}
+   }
 
 .button{
     background-color: rgb(9, 127, 48);

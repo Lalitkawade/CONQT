@@ -16,15 +16,17 @@ const Content = () => {
 
   return (
     <div className="sidebar">
-      <div className="sidebar-card" style={{ height: '500px', width: '200px' }}>
+      <br/>
+      <span style={{ paddingLeft: '30px'}}><i class="fa-solid fa-house"></i>{" "}<i class="fa-solid fa-chevron-right"></i>{" "}Offer</span>
+      <div className="sidebar-card" style={{ height: '300px', width: '200px' }}>
         <div className="sidebar-item" onClick={handleSoftwareClick}>
-          Software
+          Software{" "}<i class="fa-solid fa-chevron-right"></i>
         </div>
         <div className="sidebar-item" onClick={handleHardwareClick}>
-          Hardware
+          Hardware{" "}<i class="fa-solid fa-chevron-right"></i>
         </div>
         <div className="sidebar-item-more" onClick={handleMoreSuggestionsClick}>
-          More Suggestions
+        <i class="fa-solid fa-square-plus" style={{color: "#05f096"}}></i> More Suggestions
         </div>
       </div>
     </div>

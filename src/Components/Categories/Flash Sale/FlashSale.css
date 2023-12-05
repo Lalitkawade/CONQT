@@ -1,6 +1,5 @@
 .headline {
-  margin-left: 325px;
-  position: relative; 
+  position: relative;
 }
 
 .headline::after {
@@ -10,14 +9,14 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background-image: linear-gradient(to right, green 10%, rgb(216, 216, 216) 20%); 
+  background-image: linear-gradient(to right, green 10%, rgb(216, 216, 216) 20%);
 }
 
 .course-list-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; 
-  margin-left: 200px;
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Adjust the gap between cards */
 }
 
 .card {
@@ -25,11 +24,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 300px; 
+  width: 300px;
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  max-width: calc(33.33% - 40px); /* Adjust card size with proper gap calculation */
 }
 
 .card-button {
@@ -51,20 +51,19 @@
 .card-button button:hover {
   background-color: #333; /* Darken the button color on hover */
 }
+
 .card img {
-  display: flex;
-  justify-content: center;
-  width: 200px; 
-  height: auto; 
-  margin-bottom: 30px; 
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px; /* Reduce the bottom margin */
 }
 
 .card h1 {
-  margin: 0; 
-  font-size: 24px; 
- }
+  margin: 0;
+  font-size: 24px;
+}
 
 .course-details {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
